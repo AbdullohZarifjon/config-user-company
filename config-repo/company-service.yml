@@ -1,3 +1,4 @@
+#database
 spring:
   application:
     name: company-service
