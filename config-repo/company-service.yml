@@ -3,7 +3,7 @@ spring:
     name: company-service
 
   datasource:
-    url: jdbc:postgresql://my-postgres:5432/avb_invest_company_db
+    url: jdbc:postgresql://postgres-company:5432/avb_invest_company_db
     username: postgres
     password: 1997
     driver-class-name: org.postgresql.Driver

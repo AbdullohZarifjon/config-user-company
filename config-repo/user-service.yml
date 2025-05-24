@@ -2,7 +2,7 @@ spring:
   application:
     name: user-service
   datasource:
-    url: jdbc:postgresql://my-postgres:5432/avb_invest
+    url: jdbc:postgresql://postgres-user:5432/avb_invest
     username: postgres
     password: 1997
     driver-class-name: org.postgresql.Driver
