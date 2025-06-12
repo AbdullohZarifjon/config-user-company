@@ -19,6 +19,16 @@ spring:
 server:
   port: 8081
 
+logging:
+  level:
+    root: INFO
+    com.example.companyservice: DEBUG
+  file:
+    name: logs/company-service.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36}.%M - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36}.%M - %msg%n"
+
 springdoc:
   api-docs:
     path: /v3/api-docs

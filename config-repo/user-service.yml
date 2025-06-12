@@ -19,6 +19,16 @@ spring:
 server:
   port: 8082
 
+logging:
+  level:
+    root: INFO
+    com.example.userservice: DEBUG
+  file:
+    name: logs/user-service.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36}.%M - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36}.%M - %msg%n"
+
 
 springdoc:
   api-docs:
