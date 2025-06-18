@@ -3,8 +3,8 @@ spring:
     name: company-service
 
   datasource:
-    #url: jdbc:postgresql://postgres-company:5432/avb_invest_company_db
-    url: jdbc:postgresql://localhost:5432/avb_invest_company_db
+    url: jdbc:postgresql://postgres-company:5432/avb_invest_company_db
+    #url: jdbc:postgresql://localhost:5432/avb_invest_company_db
     username: postgres
     password: 1997
     driver-class-name: org.postgresql.Driver
@@ -18,7 +18,9 @@ spring:
         format_sql: true
 
 server:
+  address: 0.0.0.0
   port: 8081
+
 
 logging:
   level:
